@@ -1,18 +1,17 @@
 import 'dart:io';
 
 void main(){
-  mul();
+  int input;
+  print("Enter num:");
+  input = int.parse(stdin.readLineSync()!);
+  mul(input);
   //mul2();
   //mul1();
   //forloop2();
   //forloop();
   }
 
-void mul(){
-  int input;
-  print("Enter num:");
-  input = int.parse(stdin.readLineSync()!);
-  
+void mul(int input){
   for(int num = 1; num <= 12; num = num + 1){
     print("$num x $input = ${num*input}");
   }
